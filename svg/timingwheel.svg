@@ -1,0 +1,11 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+	<!-- wheel fill -->
+	<circle cx="100" cy="100" r="80" stroke="#0A1321" fill="#03203C" stroke-width="4" />
+
+	<!-- Timing dashes-->
+	<circle cx="100" cy="100" r="70" stroke="#727783" stroke-width="10" stroke-dasharray="83" />
+
+	<!-- wheel re-stroke -->
+	<circle cx="100" cy="100" r="80" stroke="#0A1321" stroke-width="4" />
+
+</svg>

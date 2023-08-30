@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+}
+
+.BPMpc {
+	/* all the colours */
+	--bpm-lighter: #A4A9B3;
+	--bpm-light: #727783;
+	--bpm-lighta: rgba(114, 119, 131, 0.75);
+	--bpm-dark: #091A2E;
+	--bpm-darka: rgba(9, 26, 46, 0.75);
+	--bpm-darker: #0A1321;
+
+
+	aspect-ratio: 5/3;
+	width: 100%;
+	padding: 1em;
+
+	display: flex;
+	flex-flow: row nowrap;
+}
+
+.BPMpc,
+.BPM,
+.tapebox,
+.wheelwindow {
+	background-color: var(--bpm-darka);
+	border: 0.2em solid var(--bpm-lighta);
+	border-radius: 1em;
+}
+
+.BPM {
+	flex-grow: 7;
+	margin-right: 1em;
+}
+
+.tapebox {
+	flex-grow: 3;
+	width: auto;
+}
+
+.wheelwindow {
+	position: relative;
+	width: 20em;
+	height: 6em;
+	overflow: hidden;
+}
+
+.wheel {
+	width: 180%;
+	aspect-ratio: 1/1;
+
+	background-image: url(../svg/timingwheel.svg);
+	background-size: cover;
+	border-radius: 50%;
+
+	position: absolute;
+	top: -50%;
+
+	/* voodo */
+	left: 50%;
+	translate: -50% 0;
+	transform-origin: center center;
+
+	animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+	from {
+		rotate: 0deg;
+	}
+
+	to {
+		rotate: 360deg;
+	}
+}
